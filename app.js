@@ -30,5 +30,13 @@ var color = 'white';
   $('#white').on('click', function() {
     color = 'white';
   })
+var colors = 'white green red blue yellow';
 
+$('.box').on('dblclick', function() {
+    $(this).removeClass(colors);
+  })
+
+  $('#reset').on('click', function() {
+    $('.box').removeClass(colors)
+  })
 })
